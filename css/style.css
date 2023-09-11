@@ -1,0 +1,81 @@
+body{
+    margin: 0;
+    background-image: url('../img/page 2.gif');
+    background-position: center;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-position: center; */
+    /* text-align: center; */
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 100vh;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.flex-con {
+    font-size: 40px;
+    color: rgb(74, 74, 82);
+    height: 80vh;
+    width: 100vw;
+    /* background-color: aqua; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.s1 {
+    color: brown;
+}
+.s2 {
+    color: blue;
+    padding-right: 120px;
+
+}
+
+.vs {
+    position: absolute;
+    left: 47%;
+}
+.names-con {
+    display: flex;
+    width: 80vw;
+    justify-content: center;
+    justify-content: space-between;
+}
+.button-con {
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+button {
+    position: absolute;
+    bottom: 4%;
+    font-size: 40px;
+    padding: 20px 70px;
+    font-family: 'Press Start 2P', cursive;
+    /* background-color: rgba(239, 225, 225, 0); */
+    /* color: white; */
+    border: 0;
+}
+
+.dance1, .dance2, .dance3 {
+    position: fixed;
+}
+
+.dance1 {
+    left: 100px;
+    width: 350px;
+}
+
+.dance2 {
+    width: 450px;
+}
+
+.dance3 {
+    right: 10px;
+    width: 600px;
+}
