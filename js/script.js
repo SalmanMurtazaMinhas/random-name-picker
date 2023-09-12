@@ -48,9 +48,9 @@ const randm = () => {
   x.innerHTML = ''
   setTimeout(() => {
     x.innerHTML = s1;
-    dance01.setAttribute('src', '../img/dance 1.gif')
-    dance02.setAttribute('src', '../img/dance 2.gif')
-    dance03.setAttribute('src', '../img/dance 4.gif')
+    dance01.setAttribute('src', 'img/dance 1.gif')
+    dance02.setAttribute('src', 'img/dance 2.gif')
+    dance03.setAttribute('src', 'img/dance 4.gif')
   }, 7700)
 
   setTimeout(() => {
