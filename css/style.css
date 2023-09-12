@@ -116,3 +116,7 @@ button:active {
     right: 10px;
     width: 600px;
 }
+
+.remain{
+    background-color: aqua;
+}
