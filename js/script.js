@@ -1,5 +1,6 @@
+const clickAudio = document.querySelector('.click-audio')
+
 let students1 = [
-  'Abbas',
   'Amira',
   'Bashayer',
   'Hasan',
@@ -7,7 +8,8 @@ let students1 = [
   'Kawthar',
   'Majid',
   'Dawood',
-  'Noor'
+  'Noor',
+  'S.Ebrahim'
 ]
 
 let students2 = [
@@ -16,7 +18,7 @@ let students2 = [
   'Sami',
   'Saud',
   'S.Ali',
-  'S.Ebrahim',
+  'Abbas',
   'Zahra',
   'Zainab A',
   'Zainab S'
@@ -24,6 +26,15 @@ let students2 = [
 
 let s1 = ''
 let s2 = ''
+let dance01 = document.querySelector('.dance1')
+let dance02 = document.querySelector('.dance2')
+let dance03 = document.querySelector('.dance3')
+
+// let mainDiv = document.querySelector('.flex-con')
+
+// mainDiv.appendChild(dance01)
+// mainDiv.appendChild(dance02)
+// mainDiv.appendChild(dance03)
 
 const randm = () => {
   let index = Math.floor(Math.random() * students1.length)
@@ -31,7 +42,21 @@ const randm = () => {
   console.log(s1)
   students1.splice(index, 1)
   console.log(students1.length)
-  x.innerHTML = s1
+  clickAudio.play()
+  x.innerHTML = ''
+  setTimeout(() => {
+    x.innerHTML = s1;
+    dance01.setAttribute('src', '../img/dance 1.gif')
+    dance02.setAttribute('src', '../img/dance 2.gif')
+    dance03.setAttribute('src', '../img/dance 4.gif')
+  }, 7700)
+
+  setTimeout(() => {
+    dance01.setAttribute('src', '')
+    dance02.setAttribute('src', '')
+    dance03.setAttribute('src', '')
+  }, 36000)
+  
   randm2()
   return s1
 }
@@ -41,7 +66,9 @@ const randm2 = () => {
   console.log(s2)
   students2.splice(index, 1)
   console.log(students2.length)
-  y.innerHTML = s2
+  y.innerHTML = ''
+  setTimeout(() => {y.innerHTML = s2}, 7700)
+  
   return s2
 }
 
