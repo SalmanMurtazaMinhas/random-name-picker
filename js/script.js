@@ -43,7 +43,11 @@ const randm = () => {
   let index = Math.floor(Math.random() * students1.length)
   s1 = students1[index]
   console.log(s1)
-  remained.innerHTML = students1.length *2
+  if(students1.length > 0){
+    remained.innerHTML = (students1.length *2 -2) + ' Remains'
+  }else {
+    remained.innerHTML = '0 Remains'
+  }
   students1.splice(index, 1)
   console.log(students1.length)
   clickAudio.play()

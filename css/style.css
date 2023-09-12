@@ -118,5 +118,6 @@ button:active {
 }
 
 .remain{
-    background-color: aqua;
+    color: rgb(210, 210, 210);
+    margin-top: -10%;
 }
