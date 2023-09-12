@@ -1,4 +1,4 @@
-body{
+#gameBody{
     margin: 0;
     background-image: url('../img/page 2.gif');
     background-position: center;
@@ -11,6 +11,26 @@ body{
     align-items: end;
     height: 100vh;
     font-family: 'Press Start 2P', cursive;
+}
+
+#homeBody {
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    position: absolute;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+}
+#startButton {
+    font-size: 30px;
+    /* left: 42%; */
+    border-radius: 20px;
+
 }
 
 .flex-con {
@@ -38,6 +58,7 @@ body{
 .vs {
     position: absolute;
     left: 47%;
+    color: rgb(166, 162, 162);
 }
 .names-con {
     display: flex;
@@ -54,12 +75,28 @@ body{
 button {
     position: absolute;
     bottom: 4%;
-    font-size: 40px;
-    padding: 20px 70px;
     font-family: 'Press Start 2P', cursive;
-    /* background-color: rgba(239, 225, 225, 0); */
-    /* color: white; */
     border: 0;
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 30px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #999;
+}
+
+button:hover {background-color: #3e8e41}
+
+button:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
 
 .dance1, .dance2, .dance3 {

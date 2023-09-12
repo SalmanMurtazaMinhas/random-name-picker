@@ -1,4 +1,6 @@
 const clickAudio = document.querySelector('.click-audio')
+const video = document.querySelector('video')
+const startButton = document.querySelector('#startButton')
 
 let students1 = [
   'Amira',
@@ -70,6 +72,11 @@ const randm2 = () => {
   setTimeout(() => {y.innerHTML = s2}, 7700)
   
   return s2
+}
+
+const playVideo = () => {
+  video.play()
+  setTimeout(() => {window.location.href = 'game.html'}, 25000)
 }
 
 // document.querySelector('button').addEventListener(clic, randm())
