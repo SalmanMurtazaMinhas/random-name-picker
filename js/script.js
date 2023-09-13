@@ -1,6 +1,7 @@
 const clickAudio = document.querySelector('.click-audio')
 const video = document.querySelector('video')
 const startButton = document.querySelector('#startButton')
+const remained = document.querySelector('.remain')
 
 let students1 = [
   'Amira',
@@ -42,11 +43,17 @@ const randm = () => {
   let index = Math.floor(Math.random() * students1.length)
   s1 = students1[index]
   console.log(s1)
+  if(students1.length > 0){
+    remained.innerHTML = (students1.length *2 -2) + ' Remains'
+  }else {
+    remained.innerHTML = '0 Remains'
+  }
   students1.splice(index, 1)
   console.log(students1.length)
   clickAudio.play()
   x.innerHTML = ''
-  setTimeout(() => {
+  if(students1.length > 0 || students2.length > 0){
+      setTimeout(() => {
     x.innerHTML = s1;
     dance01.setAttribute('src', 'img/dance 1.gif')
     dance02.setAttribute('src', 'img/dance 2.gif')
@@ -61,6 +68,11 @@ const randm = () => {
   
   randm2()
   return s1
+  } else {
+    x.innerHTML = 'GAME'
+    y.innerHTML = 'OVER'
+  }
+
 }
 const randm2 = () => {
   let index = Math.floor(Math.random() * students2.length)
@@ -79,14 +91,9 @@ const playVideo = () => {
   setTimeout(() => {window.location.href = 'game.html'}, 25000)
 }
 
-// document.querySelector('button').addEventListener(clic, randm())
 
 const x = document.querySelector('.s1')
 const y = document.querySelector('.s2')
 
 
 
-
-// randm()
-// console.log(randm());
-// console.log(randm());

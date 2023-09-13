@@ -116,3 +116,8 @@ button:active {
     right: 10px;
     width: 600px;
 }
+
+.remain{
+    color: rgb(210, 210, 210);
+    margin-top: -10%;
+}
