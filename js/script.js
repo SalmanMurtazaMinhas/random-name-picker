@@ -18,7 +18,7 @@ let students1 = [
 
 let students2 = [
   // 'Raja',
-  'Micheal',
+  'Michael',
   'Sami',
   'Saud',
   'S.Ali',
