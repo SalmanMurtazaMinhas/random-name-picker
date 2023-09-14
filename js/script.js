@@ -9,7 +9,7 @@ let students1 = [
   'Bashayer',
   'Hasan',
   'Husain',
-  'Kawthar',
+  // 'Kawthar',
   'Majid',
   'Dawood',
   'Noor',
@@ -17,8 +17,8 @@ let students1 = [
 ]
 
 let students2 = [
-  'Raja',
-  'Roaa',
+  // 'Raja',
+  'Micheal',
   'Sami',
   'Saud',
   'S.Ali',
