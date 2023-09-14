@@ -2,6 +2,7 @@ const clickAudio = document.querySelector('.click-audio')
 const video = document.querySelector('video')
 const startButton = document.querySelector('#startButton')
 const remained = document.querySelector('.remain')
+const nextButton = document.querySelector('.nextButton')
 
 let students1 = [
   'Amira',
@@ -27,6 +28,9 @@ let students2 = [
   'Zainab S'
 ]
 
+// let studentsarray1 = []
+// let studentsarray2 = []
+
 let s1 = ''
 let s2 = ''
 let dance01 = document.querySelector('.dance1')
@@ -51,7 +55,9 @@ const randm = () => {
   students1.splice(index, 1)
   console.log(students1.length)
   clickAudio.play()
+  nextButton.disabled = true;
   x.innerHTML = ''
+  // studentsarray1 = localStorage.setItem('studentsarray1', students1);
   if(students1.length > 0 || students2.length > 0){
       setTimeout(() => {
     x.innerHTML = s1;
@@ -61,6 +67,7 @@ const randm = () => {
   }, 7700)
 
   setTimeout(() => {
+    nextButton.disabled = false;
     dance01.setAttribute('src', '')
     dance02.setAttribute('src', '')
     dance03.setAttribute('src', '')
@@ -81,6 +88,7 @@ const randm2 = () => {
   students2.splice(index, 1)
   console.log(students2.length)
   y.innerHTML = ''
+  // studentsarray2 = localStorage.setItem('studentsarray2', students2);
   setTimeout(() => {y.innerHTML = s2}, 7700)
   
   return s2
