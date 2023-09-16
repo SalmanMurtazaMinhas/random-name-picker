@@ -50,7 +50,7 @@ const randm = () => {
   if(students1.length > 0){
     remained.innerHTML = (students1.length *2 -2) + ' Remains'
   }else {
-    remained.innerHTML = '0 Remains'
+    remained.innerHTML = 'Relax bro, the game is over!'
   }
   students1.splice(index, 1)
   console.log(students1.length)
