@@ -129,3 +129,12 @@ button:active {
     text-align: center;
     /* margin-bottom: 50px; */
 }
+
+#credit {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-size: 20px;
+    color: white;
+    /* top: 20px; */
+}
